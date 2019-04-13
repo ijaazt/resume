@@ -3,8 +3,7 @@
 % Author : Sourabh Bajaj
 % License : MIT
 %------------------------
-\documentclass[letterpaper,11pt]{article}
-
+\documentclass[letterpaper,11pt]{article} 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -85,83 +84,106 @@
 \begin{document}
 
 %----------HEADING-----------------
-\textbf{\href{http://www.muhammadtello.com/}{\LARGE Muhammad Tello}} \centering \\ \vspace*{0.5cm}
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-		3630 Partridge Path, Apt 6, Ann Arbor, MI   48108 & +1-734-709-8401 \\
-		\href{mailto:mitello@wccnet.edu}{mitello@wccnet.edu} & 
-		\href{https://github.com/ijaazt}{https://github.com/ijaazt} 
-\end{tabular*}
+
+\begin{center}
+	\textbf{\href{http://www.muhammadtello.com/}{\LARGE Muhammad Tello}}  \\
+	\setlength{\tabcolsep}{5pt}
+	\begin{tabular}{l | c | r}
+	+1-734-709-8401 & \href{mailto:mitello@wccnet.edu}{mitello@wccnet.edu} & 
+		\href{https://github.com/ijaazt}{https://github.com/ijaazt}
+	\end{tabular}
+\end{center}
 
 
 
-						%-----------EDUCATION-----------------
+%-----------EDUCATION-----------------
 \section{Education}
 \resumeSubHeadingListStart
-\resumeSubheading
-{Washtenaw Community College}{Ann Arbor, MI}
-{Associate of Programming in Java in Computer Science}{December 2019}
+	\resumeSubheading
+	{Washtenaw Community College}{Ann Arbor, MI}
+	{Associate in Science Computer Science: Programming in Java}{December 2019}
 \resumeSubHeadingListEnd
 
 %--------SKILLS------------
 \section{Skills}
 \resumeSubHeadingListStart
-\resumeItem{Languages}{Java, Kotlin, JavaScript, Python, C}
-\resumeItem{Technologies}{React, Spring, Git}
-\resumeItem{Technical Management}{Project Management, Troubleshooting, Installation}
-\resumeItem{Operating Systems}{Android, Linux/Unix, Windows XP - 10}
+	\resumeItem{Languages}{Java, Kotlin, JavaScript, Python, C}
+	\resumeItem{Technologies}{React, Spring, Git}
+	\resumeItem{Technical Management}{Project Management, Troubleshooting, Installation}
+	\resumeItem{Operating Systems}{Android, Linux/Unix, Windows XP - 10}
 \resumeSubHeadingListEnd
 
 %-----------Academic PROJECTS-----------------
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubheadingDouble{Postboard}{Web}
-\resumeItemListStart
-\resumeSingleItem{Developed a simple multi-user post application.}
-\resumeSingleItem{Used JDBC to create and manipulate a MySQL Database of user info and post content.}
-\resumeSingleItem{Used Servlets to create a REST API.}
-\resumeSingleItem{Used JavaScript and Bootstrap to create a user interface.}
-\resumeItemListEnd
-
-\resumeSubheadingDouble{Movie Search}{Android}
-\resumeItemListStart
-\resumeSingleItem{Used MVC, APIs, View Models to save movies into a database viewable by the user}
-\resumeSingleItem{Architectured application to use fragments to showcase compartmentalized UI}
-\resumeSingleItem{Implemented a Recycler adapter to convert movie data to be viewable on the screen}
-\resumeSingleItem{Designed fully asynchronous application using threads, callables and live data}
-\resumeItemListEnd
-
-\resumeSubheadingDouble{Pong Game}{Desktop}
-\resumeItemListStart
-\resumeSingleItem{Co-created a multiplayer cross-platform pong game that paid homage to the Atari game using AWT}
-\resumeSingleItem{Given a fully developed framework created an networked MVC game}
-\resumeItemListEnd
-\resumeSubHeadingListEnd
-
-
-%-----------EXPERIENCE-----------------
 \section{Experience}
 \resumeSubHeadingListStart
-\resumeSubheading
-{Washtenaw Community College}{Ann Arbor, MI}
-{December 2017 - Present}{}
-\resumeItemListStart
-\resumeItem{Student Worker, Computer Classroom Lab Aide}{Provides direct support to students and faculty during CIS classes.}
-\resumeItemListStart
-\resumeSingleItem{Proactively assist students with technology use during class sessions.}
-\resumeSingleItem{Clean classrooms during school breaks.}
-\resumeSingleItem{Support external groups, such as UA and Ironworkers.}
-\resumeSingleItem{Support group study sessions.}
-\resumeItemListEnd
-\resumeItemListEnd
 
-\resumeItemListStart
-\resumeItem{Group Study Facilitator/Support}{The Group Study Facilitator provides direct support to students during Group Study sessions.}
-\resumeItemListStart
-\resumeSingleItem{Assist students with assignments for courses within discipline.}
-\resumeSingleItem{Assist in the installation of O.S. on student computers including installation of updates, drivers, additional apps, and activation which must be tracked by student.}
-\resumeSingleItem{Proactively assist students with computer software during group study sessions.}
-\resumeItemListEnd
-\resumeItemListEnd
+	\resumeSubheadingDouble{Postboard}{Web}
+	\resumeItemListStart
+		\resumeSingleItem
+		{Developed a simple multi-user post application.}
+		\resumeSingleItem
+		{Used JDBC to create and manipulate a MySQL Database of user info and post content.}
+		\resumeSingleItem
+		{Used Servlets to create a REST API.}
+		\resumeSingleItem
+		{Used JavaScript and Bootstrap to create a user interface.}
+	\resumeItemListEnd
+
+	\resumeSubheadingDouble
+	{Movie Lists}{Android}
+	\resumeItemListStart
+		\resumeSingleItem
+		{Used MVC, APIs, View Models to save movies into a database viewable by the user}
+		\resumeSingleItem
+		{Architectured application to use fragments to showcase compartmentalized UI}
+		\resumeSingleItem
+		{Implemented a Recycler adapter to convert movie data to be viewable on the screen}
+		\resumeSingleItem
+		{Designed fully asynchronous application using threads, callables and live data}
+	\resumeItemListEnd
+
+	\resumeSubheadingDouble{Pong Game}{Desktop}
+	\resumeItemListStart
+		\resumeSingleItem
+		{Co-created a multiplayer cross-platform pong game that paid homage to the Atari game using AWT}
+		\resumeSingleItem
+		{Given a fully developed framework created an networked MVC game}
+	\resumeItemListEnd
+
+	\resumeSubheading
+	{Washtenaw Community College}{Ann Arbor, MI}
+	{Lab Aide}{December 2017 - Present}
+	\resumeItemListStart
+		\resumeItem{Student Worker, Computer Classroom Lab Aide}{}
+		\resumeItemListStart
+			\resumeSingleItem
+			{Provides direct support to students and faculty during CIS classes.}
+			\resumeSingleItem
+			{Proactively assist students with technology use during class sessions.}
+			\resumeSingleItem
+			{Clean classrooms during school breaks.}
+			\resumeSingleItem
+			{Support external groups, such as UA and Ironworkers.}
+			\resumeSingleItem
+			{Support group study sessions.}
+		\resumeItemListEnd
+
+		\resumeItem{Group Study Facilitator/Support}{}
+		\resumeItemListStart
+			\resumeSingleItem
+			{Provides direct support to students during Group Study sessions.}
+			\resumeSingleItem
+			{Assist students with assignments for courses within discipline.}
+			\resumeSingleItem
+			{Assist in the installation of O.S. on student computers including installation of updates, drivers, additional apps, and activation which must be tracked by student.}
+			\resumeSingleItem
+			{Proactively assist students with computer software during group study sessions.}
+		\resumeItemListEnd
+	\resumeItemListEnd
+	\resumeSubheading
+	{Starbucks}{Ann Arbor, MI}
+	{Barista}{November 2016 - Present}
+
 \resumeSubHeadingListEnd
 
 
